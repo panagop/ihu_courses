@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "jupyters-ihu-courses"
+name = "ihu-courses"
 version = "0.1.0"
 description = ""
 authors = ["panagop <gpanagop@gmail.com>"]
 readme = "README.md"
-packages = [{include = "jupyters_ihu_courses"}]
+packages = [{include = "common", path = "common"}]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.10.0"
