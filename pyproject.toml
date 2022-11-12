@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "jupyters-ihu-courses"
+version = "0.1.0"
+description = ""
+authors = ["panagop <gpanagop@gmail.com>"]
+readme = "README.md"
+packages = [{include = "jupyters_ihu_courses"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10.0"
+jupyterlab = "^3.5.0"
+streng = "^0.0.7"
+openseespy = "^3.4.0.2"
+vfo = "^0.0.9"
+opsvis = "^1.0.21"
+cached-property = "^1.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
