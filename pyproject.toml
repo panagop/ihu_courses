@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["panagop <gpanagop@gmail.com>"]
 readme = "README.md"
-packages = [{include = "common", path = "common"}]
+packages = [{include = "common"}]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.10.0"
@@ -14,6 +14,7 @@ openseespy = "^3.4.0.2"
 vfo = "^0.0.9"
 opsvis = "^1.0.21"
 cached-property = "^1.5.2"
+jupyter = "^1.0.0"
 
 
 [build-system]
