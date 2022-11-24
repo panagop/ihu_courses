@@ -15,6 +15,8 @@ vfo = "^0.0.9"
 opsvis = "^1.0.21"
 cached-property = "^1.5.2"
 jupyter = "^1.0.0"
+jupyter-book = "^0.13.1"
+ghp-import = "^2.1.0"
 
 
 [build-system]
