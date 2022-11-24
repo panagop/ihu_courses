@@ -71,6 +71,8 @@ instance/
 # Sphinx documentation
 docs/_build/
 
+ihu_courses_ebook/_build/
+
 # PyBuilder
 .pybuilder/
 target/
