@@ -4,7 +4,8 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
-- file: example5/example5.ipynb
+  - file: markdown
+  - file: notebooks
+  - file: markdown-notebooks
+    sections:
+    - file: example5/example5.ipynb
