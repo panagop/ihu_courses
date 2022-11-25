@@ -12,4 +12,14 @@ parts:
 - caption: ΣΤΑΤΙΚΗ ΜΕ ΜΗΤΡΩΑ
   chapters:
     - file: example5/example5.ipynb
-    - file: ../jupyter/ihu/statiki_me_mitroa/example4/example4.ipynb
+    # - file: ../jupyter/ihu/statiki_me_mitroa/example4/example4.ipynb
+- caption: ΟΠΛΙΣΜΕΝΟ ΣΚΥΡΟΔΕΜΑ Ι
+  chapters:
+    - file: markdown-01
+- caption: ΟΠΛΙΣΜΕΝΟ ΣΚΥΡΟΔΕΜΑ ΙΙ
+  chapters:
+    - file: markdown-02
+- caption: ΟΠΛΙΣΜΕΝΟ ΣΚΥΡΟΔΕΜΑ ΙΙΙ
+  chapters:
+    - file: markdown-03
+      title: alternative title
