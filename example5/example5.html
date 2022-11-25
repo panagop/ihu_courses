@@ -198,35 +198,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/panagop/ihu_courses/main?urlpath=tree/ihu_courses_ebook/example5/example5.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -294,7 +265,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/example5/example5.ipynb"
+        <a href="../_sources/example5/example5.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -305,7 +276,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.ipynb</span>
+<span class="headerbtn__text-container">.md</span>
 </a>
 
       </li>
@@ -530,9 +501,11 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sym</span>
+  <!-- #region tags=[] -->
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Εφαρμογή 5<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<!-- #endregion -->
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sym</span>
 <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Matrix</span>
 <span class="kn">from</span> <span class="nn">mitroiki_functs</span> <span class="kn">import</span> <span class="n">K_without_axial</span>
 <span class="kn">from</span> <span class="nn">mitroiki_functs</span> <span class="kn">import</span> <span class="n">P_point_load_at_distance_a</span><span class="p">,</span> <span class="n">P_uniformly_distributed_load</span>
@@ -546,18 +519,13 @@ title="Print to PDF"
 <span class="kn">import</span> <span class="nn">opsvis</span> <span class="k">as</span> <span class="nn">opsv</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="c1"># from IPython.display import Image</span>
 </pre></div>
 </div>
-</div>
-</div>
-<section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>Εφαρμογή 5<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
 <p>Να υπολογιστούν οι αντιδράσεις στήριξης, οι παραμορφώσεις και τα διαγράμματα των εντατικών μεγεθών για τον φορέα του σχήματος.</p>
 <p>Να αγνοηθούν οι αξονικοί βαθμοί ελευθερίας</p>
-<img src="https://raw.githubusercontent.com/panagop/ihu_courses/main/images/mitroa/example5/ekfonisi.png" width="650"><div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">E</span> <span class="o">=</span> <span class="mf">20_000.</span>
+<img src="https://raw.githubusercontent.com/panagop/ihu_courses/main/images/mitroa/example5/ekfonisi.png" width="650">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">E</span> <span class="o">=</span> <span class="mf">20_000.</span>
 <span class="n">I</span> <span class="o">=</span> <span class="mf">1.</span>
 <span class="n">L1</span> <span class="o">=</span> <span class="mf">3.0</span>
 <span class="n">L2</span> <span class="o">=</span> <span class="mf">4.0</span>
@@ -566,8 +534,6 @@ title="Print to PDF"
 <span class="n">q1_load</span> <span class="o">=</span> <span class="mf">10.</span>
 <span class="n">q2_load</span> <span class="o">=</span> <span class="mf">40.</span>
 </pre></div>
-</div>
-</div>
 </div>
 <section id="id2">
 <h2>Αντιστοίχιση τοπικών - καθολικών βαθμών ελευθερίας<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
@@ -621,33 +587,18 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-<img src="https://raw.githubusercontent.com/panagop/ihu_courses/main/images/mitroa/example5/dof_global_local.png" width="650"></section>
+<img src="https://raw.githubusercontent.com/panagop/ihu_courses/main/images/mitroa/example5/dof_global_local.png" width="650">
+</section>
 <section id="id3">
 <h2>Μητρώα στιβαρότητας στοιχείων<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <p>Τα στοιχεία 2 (2-3) και 3 (3-4) έχουν όμοια μητρώα στιβαρότητας (ίδιες διαστάσεις, διατομές, υλικά)</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K1</span> <span class="o">=</span> <span class="n">K_without_axial</span><span class="p">(</span><span class="n">E</span><span class="o">=</span><span class="n">E</span><span class="p">,</span> <span class="n">I</span><span class="o">=</span><span class="n">I</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L1</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">K1</span> <span class="o">=</span> <span class="n">K_without_axial</span><span class="p">(</span><span class="n">E</span><span class="o">=</span><span class="n">E</span><span class="p">,</span> <span class="n">I</span><span class="o">=</span><span class="n">I</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L1</span><span class="p">)</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">K1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}8888.9 &amp; 13333.3 &amp; -8888.9 &amp; 13333.3\\13333.3 &amp; 26666.7 &amp; -13333.3 &amp; 13333.3\\-8888.9 &amp; -13333.3 &amp; 8888.9 &amp; -13333.3\\13333.3 &amp; 13333.3 &amp; -13333.3 &amp; 26666.7\end{matrix}\right]\end{split}\]</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K2</span> <span class="o">=</span> <span class="n">K3</span> <span class="o">=</span> <span class="n">K_without_axial</span><span class="p">(</span><span class="n">E</span><span class="o">=</span><span class="n">E</span><span class="p">,</span> <span class="n">I</span><span class="o">=</span><span class="mf">1.5</span><span class="o">*</span><span class="n">I</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L2</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">K2</span> <span class="o">=</span> <span class="n">K3</span> <span class="o">=</span> <span class="n">K_without_axial</span><span class="p">(</span><span class="n">E</span><span class="o">=</span><span class="n">E</span><span class="p">,</span> <span class="n">I</span><span class="o">=</span><span class="mf">1.5</span><span class="o">*</span><span class="n">I</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L2</span><span class="p">)</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">K2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}5625.0 &amp; 11250.0 &amp; -5625.0 &amp; 11250.0\\11250.0 &amp; 30000.0 &amp; -11250.0 &amp; 15000.0\\-5625.0 &amp; -11250.0 &amp; 5625.0 &amp; -11250.0\\11250.0 &amp; 15000.0 &amp; -11250.0 &amp; 30000.0\end{matrix}\right]\end{split}\]</div>
-</div>
 </div>
 </section>
 <section id="id4">
@@ -711,9 +662,7 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K1_temp</span> <span class="o">=</span> <span class="n">sym</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">K1_temp</span> <span class="o">=</span> <span class="n">sym</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
 
 <span class="n">K1_temp</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="o">+</span><span class="n">K1</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>       <span class="c1"># (-) x (-) = (+)</span>
 <span class="n">K1_temp</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="o">-</span><span class="n">K1</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>       <span class="c1"># (+) x (-) = (-)</span>
@@ -738,15 +687,7 @@ title="Print to PDF"
 <span class="n">round_expr</span><span class="p">(</span><span class="n">K1_temp</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}8888.9 &amp; 0 &amp; -13333.3 &amp; -8888.9 &amp; -13333.3 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-13333.3 &amp; 0 &amp; 26666.7 &amp; 13333.3 &amp; 13333.3 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-8888.9 &amp; 0 &amp; 13333.3 &amp; 8888.9 &amp; 13333.3 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-13333.3 &amp; 0 &amp; 13333.3 &amp; 13333.3 &amp; 26666.7 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{matrix}\right]\end{split}\]</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K2_temp</span> <span class="o">=</span> <span class="n">sym</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">K2_temp</span> <span class="o">=</span> <span class="n">sym</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
 
 <span class="n">K2_temp</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">K2</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 <span class="n">K2_temp</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">K2</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
@@ -756,39 +697,17 @@ title="Print to PDF"
 <span class="n">round_expr</span><span class="p">(</span><span class="n">K2_temp</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 5625.0 &amp; 0 &amp; 0 &amp; 11250.0 &amp; -5625.0 &amp; 11250.0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 11250.0 &amp; 0 &amp; 0 &amp; 30000.0 &amp; -11250.0 &amp; 15000.0 &amp; 0 &amp; 0\\0 &amp; -5625.0 &amp; 0 &amp; 0 &amp; -11250.0 &amp; 5625.0 &amp; -11250.0 &amp; 0 &amp; 0\\0 &amp; 11250.0 &amp; 0 &amp; 0 &amp; 15000.0 &amp; -11250.0 &amp; 30000.0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{matrix}\right]\end{split}\]</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K3_temp</span> <span class="o">=</span> <span class="n">sym</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">K3_temp</span> <span class="o">=</span> <span class="n">sym</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
 
 <span class="n">K3_temp</span><span class="p">[</span><span class="mi">5</span><span class="p">:,</span> <span class="mi">5</span><span class="p">:]</span> <span class="o">+=</span> <span class="n">K3</span>
 
 <span class="n">round_expr</span><span class="p">(</span><span class="n">K3_temp</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 5625.0 &amp; 11250.0 &amp; -5625.0 &amp; 11250.0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 11250.0 &amp; 30000.0 &amp; -11250.0 &amp; 15000.0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -5625.0 &amp; -11250.0 &amp; 5625.0 &amp; -11250.0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 11250.0 &amp; 15000.0 &amp; -11250.0 &amp; 30000.0\end{matrix}\right]\end{split}\]</div>
-</div>
-</div>
 <p>Οπότε το συνολικό μητρώο του φορέα είναι το <span class="math notranslate nohighlight">\(Κ\)</span></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K</span> <span class="o">=</span> <span class="n">K1_temp</span> <span class="o">+</span> <span class="n">K2_temp</span> <span class="o">+</span> <span class="n">K3_temp</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">K</span> <span class="o">=</span> <span class="n">K1_temp</span> <span class="o">+</span> <span class="n">K2_temp</span> <span class="o">+</span> <span class="n">K3_temp</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}8888.9 &amp; 0 &amp; -13333.3 &amp; -8888.9 &amp; -13333.3 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 5625.0 &amp; 0 &amp; 0 &amp; 11250.0 &amp; -5625.0 &amp; 11250.0 &amp; 0 &amp; 0\\-13333.3 &amp; 0 &amp; 26666.7 &amp; 13333.3 &amp; 13333.3 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-8888.9 &amp; 0 &amp; 13333.3 &amp; 8888.9 &amp; 13333.3 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-13333.3 &amp; 11250.0 &amp; 13333.3 &amp; 13333.3 &amp; 56666.7 &amp; -11250.0 &amp; 15000.0 &amp; 0 &amp; 0\\0 &amp; -5625.0 &amp; 0 &amp; 0 &amp; -11250.0 &amp; 11250.0 &amp; 0 &amp; -5625.0 &amp; 11250.0\\0 &amp; 11250.0 &amp; 0 &amp; 0 &amp; 15000.0 &amp; 0 &amp; 60000.0 &amp; -11250.0 &amp; 15000.0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -5625.0 &amp; -11250.0 &amp; 5625.0 &amp; -11250.0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 11250.0 &amp; 15000.0 &amp; -11250.0 &amp; 30000.0\end{matrix}\right]\end{split}\]</div>
-</div>
 </div>
 </section>
 <section id="id5">
@@ -796,33 +715,17 @@ title="Print to PDF"
 <section id="id6">
 <h3>Στοιχείο 1<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
 <p>Το στοιχείο 1 παραλαμβάνει ομοιόμορφα κατανεμημένο φορτίο <span class="math notranslate nohighlight">\(q_1=10\text{kN/m}\)</span></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P1</span> <span class="o">=</span> <span class="n">P_uniformly_distributed_load</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="n">q1_load</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L1</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">P1</span> <span class="o">=</span> <span class="n">P_uniformly_distributed_load</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="n">q1_load</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L1</span><span class="p">)</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">P1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}-15.0\\-7.5\\-15.0\\7.5\end{matrix}\right]\end{split}\]</div>
-</div>
 </div>
 </section>
 <section id="id7">
 <h3>Στοιχείο 3<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
 <p>Το στοιχείο 3 παραλαμβάνει ομοιόμορφα κατανεμημένο φορτίο <span class="math notranslate nohighlight">\(q_2=40\text{kN/m}\)</span></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P3</span> <span class="o">=</span> <span class="n">P_uniformly_distributed_load</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="n">q2_load</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L3</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">P3</span> <span class="o">=</span> <span class="n">P_uniformly_distributed_load</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="n">q2_load</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L3</span><span class="p">)</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">P3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}-80.0\\-53.33\\-80.0\\53.33\end{matrix}\right]\end{split}\]</div>
-</div>
 </div>
 </section>
 <section id="id8">
@@ -880,9 +783,7 @@ title="Print to PDF"
 </table>
 <p>Δημιουργείται ένα μητρώο 9x1 και στη συνέχεια προστίθενται οι τιμές στις κατάλληλες θέσεις</p>
 <p>Προσοχή στα πρόσημα στη μεταφορά των δυνάμεων του στοιχείου 1</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P1_temp</span> <span class="o">=</span> <span class="n">sym</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">P1_temp</span> <span class="o">=</span> <span class="n">sym</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">P1_temp</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="o">-</span><span class="n">P1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">P1_temp</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="n">P1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">P1_temp</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="o">-</span><span class="n">P1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
@@ -890,36 +791,14 @@ title="Print to PDF"
 <span class="n">P1_temp</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}15.0\\0\\-7.5\\15.0\\7.5\\0\\0\\0\\0\end{matrix}\right]\end{split}\]</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P3_temp</span> <span class="o">=</span> <span class="n">sym</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">P3_temp</span> <span class="o">=</span> <span class="n">sym</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">P3_temp</span><span class="p">[</span><span class="mi">5</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="n">P3</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">P3_temp</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}0\\0\\0\\0\\0\\-80.0\\-53.33\\-80.0\\53.33\end{matrix}\right]\end{split}\]</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P</span> <span class="o">=</span> <span class="n">P1_temp</span> <span class="o">+</span> <span class="n">P3_temp</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">P</span> <span class="o">=</span> <span class="n">P1_temp</span> <span class="o">+</span> <span class="n">P3_temp</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}15.0\\0\\-7.5\\15.0\\7.5\\-80.0\\-53.33\\-80.0\\53.33\end{matrix}\right]\end{split}\]</div>
-</div>
 </div>
 </section>
 </section>
@@ -927,7 +806,8 @@ title="Print to PDF"
 <h2>Δεσμευμένοι και ελεύθεροι βαθμοί ελευθερίας<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h2>
 <p>Οι δεσμευμένοι βαθμοί ελευθερίας στο καθολικό σύστημα είναι οι <span style="color:red">(1)</span>, <span style="color:red">(2)</span>, <span style="color:red">(3)</span>, <span style="color:red">(4)</span>, <span style="color:red">(6)</span>, <span style="color:red">(8)</span> και <span style="color:red">(9)</span> λόγω της κύλισης στον κόμβο 3 και των πακτώσεων στους κόμβους 1 και 4.</p>
 <p>Αντίθετα, ελεύθεροι είναι οι βαθμοί ελευθερίας <span style="color:blue">(5)</span> και <span style="color:blue">(7)</span></p>
-<img src="https://raw.githubusercontent.com/panagop/ihu_courses/main/images/mitroa/example5/dof_global_local.png" width="650"></section>
+<img src="https://raw.githubusercontent.com/panagop/ihu_courses/main/images/mitroa/example5/dof_global_local.png" width="650">
+</section>
 <section id="id10">
 <h2>Διαχωρισμός μητρώων<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h2>
 <img src="https://raw.githubusercontent.com/panagop/ihu_courses/main/images/mitroa/example5/Kuu_vs_Kru.png" width="800">
@@ -982,58 +862,27 @@ title="Print to PDF"
 </tbody>
 </table>
 <p>Ομοίως και για τα μητρώα εξωτερικής φόρτισης, παραμορφώσεων και αντιδράσεων</p>
-<img src="https://raw.githubusercontent.com/panagop/ihu_courses/main/images/mitroa/example5/PUR.png" width="750"><section id="id11">
+<img src="https://raw.githubusercontent.com/panagop/ihu_courses/main/images/mitroa/example5/PUR.png" width="750">
+<section id="id11">
 <h3>Υπομητρώα στιβαρότητας<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K_UU</span> <span class="o">=</span> <span class="n">K</span><span class="p">[[</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">K_UU</span> <span class="o">=</span> <span class="n">K</span><span class="p">[[</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]]</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">K_UU</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}56666.7 &amp; 15000.0\\15000.0 &amp; 60000.0\end{matrix}\right]\end{split}\]</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K_RU</span> <span class="o">=</span> <span class="n">K</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">K_RU</span> <span class="o">=</span> <span class="n">K</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">K_RU</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}-13333.3 &amp; 0\\11250.0 &amp; 11250.0\\13333.3 &amp; 0\\13333.3 &amp; 0\\-11250.0 &amp; 0\\0 &amp; -11250.0\\0 &amp; 15000.0\end{matrix}\right]\end{split}\]</div>
-</div>
 </div>
 </section>
 <section id="id12">
 <h3>Υπομητρώα εξωτερικής φόρτισης<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P_U</span> <span class="o">=</span> <span class="n">P</span><span class="p">[[</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="mi">0</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">P_U</span> <span class="o">=</span> <span class="n">P</span><span class="p">[[</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="mi">0</span><span class="p">]</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">P_U</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}7.5\\-53.33\end{matrix}\right]\end{split}\]</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P_R</span> <span class="o">=</span> <span class="n">P</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="mi">0</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">P_R</span> <span class="o">=</span> <span class="n">P</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="mi">0</span><span class="p">]</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">P_R</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}15.0\\0\\-7.5\\15.0\\-80.0\\-80.0\\53.33\end{matrix}\right]\end{split}\]</div>
-</div>
 </div>
 </section>
 </section>
@@ -1042,41 +891,23 @@ title="Print to PDF"
 <p>Είναι <span class="math notranslate nohighlight">\(K_{UU}\cdot U_U = P_U + R_U\)</span>, με <span class="math notranslate nohighlight">\(R_U=0\)</span></p>
 <p>οπότε <span class="math notranslate nohighlight">\(K_{UU}\cdot U_U = P_U\)</span></p>
 <p>και τελικά <span class="math notranslate nohighlight">\(U_U = K_{UU}^{-1}\cdot P_U\)</span></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">U_U</span> <span class="o">=</span> <span class="n">K_UU</span><span class="o">.</span><span class="n">inv</span><span class="p">()</span> <span class="o">*</span> <span class="n">P_U</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">U_U</span> <span class="o">=</span> <span class="n">K_UU</span><span class="o">.</span><span class="n">inv</span><span class="p">()</span> <span class="o">*</span> <span class="n">P_U</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">U_U</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}0.00039\\-0.00099\end{matrix}\right]\end{split}\]</div>
-</div>
 </div>
 </section>
 <section id="id14">
 <h2>Υπολογισμός αντιδράσεων στήριξης<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h2>
 <p>Είναι <span class="math notranslate nohighlight">\(K_{RU}\cdot U_U = P_R + R_R\)</span></p>
 <p>οπότε <span class="math notranslate nohighlight">\(R_R = K_{RU}\cdot U_U - P_R\)</span></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">R_R</span> <span class="o">=</span> <span class="n">K_RU</span><span class="o">*</span><span class="n">U_U</span> <span class="o">-</span> <span class="n">P_R</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">R_R</span> <span class="o">=</span> <span class="n">K_RU</span><span class="o">*</span><span class="n">U_U</span> <span class="o">-</span> <span class="n">P_R</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">R_R</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}-20.249\\-6.678\\12.749\\-9.751\\75.571\\91.107\\-68.143\end{matrix}\right]\end{split}\]</div>
-</div>
 </div>
 </section>
 <section id="opensees">
 <h2>Επίλυση/έλεγχος με το OpenSees<a class="headerlink" href="#opensees" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ops</span><span class="o">.</span><span class="n">wipe</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ops</span><span class="o">.</span><span class="n">wipe</span><span class="p">()</span>
 <span class="n">ops</span><span class="o">.</span><span class="n">model</span><span class="p">(</span><span class="s1">&#39;basic&#39;</span><span class="p">,</span> <span class="s1">&#39;-ndm&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;-ndf&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 
 <span class="n">A</span> <span class="o">=</span> <span class="mf">1000.</span>
@@ -1148,62 +979,28 @@ title="Print to PDF"
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/example5_41_0.png" src="../_images/example5_41_0.png" />
-<img alt="../_images/example5_41_1.png" src="../_images/example5_41_1.png" />
-<img alt="../_images/example5_41_2.png" src="../_images/example5_41_2.png" />
-<img alt="../_images/example5_41_3.png" src="../_images/example5_41_3.png" />
-<img alt="../_images/example5_41_4.png" src="../_images/example5_41_4.png" />
-<img alt="../_images/example5_41_5.png" src="../_images/example5_41_5.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># U1, U2, U3, U4, U5, U6, U7, U8, U9 = sym.symbols(&#39;U1 U2 U3 U4 U5 U6 U7 U8 U9&#39;)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># U1, U2, U3, U4, U5, U6, U7, U8, U9 = sym.symbols(&#39;U1 U2 U3 U4 U5 U6 U7 U8 U9&#39;)</span>
 <span class="c1"># P1, P2, P3, P4, P5, P6, P7, P8, P9 = sym.symbols(&#39;P1 P2 P3 P4 P5 P6 P7 P8 P9&#39;)</span>
 <span class="c1"># R1, R2, R3, R4, R5, R6, R7, R8, R9 = sym.symbols(&#39;R1 R2 R3 R4 R5 R6 R7 R8 R9&#39;)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># U = Matrix([[U1], [U2], [U3], [U4], [U5], [U6], [U7], [U8], [U9]])</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># U = Matrix([[U1], [U2], [U3], [U4], [U5], [U6], [U7], [U8], [U9]])</span>
 <span class="c1"># U</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># U.subs(U1, 0).subs(U2, 0).subs(U3, 0).subs(U4, 0).subs(U6, 0).subs(U8, 0).subs(U9, 0)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># U.subs(U1, 0).subs(U2, 0).subs(U3, 0).subs(U4, 0).subs(U6, 0).subs(U8, 0).subs(U9, 0)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># P = Matrix([[P1], [P2], [P3], [P4], [P5], [P6], [P7]])</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># P = Matrix([[P1], [P2], [P3], [P4], [P5], [P6], [P7]])</span>
 <span class="c1"># P</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># R = Matrix([[R1], [R2], [R3], [R4], [R5], [R6], [R7], [R8], [R9]])</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># R = Matrix([[R1], [R2], [R3], [R4], [R5], [R6], [R7], [R8], [R9]])</span>
 <span class="c1"># R</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># R.subs(R5, 0).subs(R7, 0)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># R.subs(R5, 0).subs(R7, 0)</span>
 </pre></div>
-</div>
-</div>
 </div>
 </section>
 </section>
