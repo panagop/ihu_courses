@@ -3,9 +3,12 @@
 
 format: jb-book
 root: intro
-chapters:
-  - file: markdown
-  - file: notebooks
-  - file: markdown-notebooks
-    sections:
+parts:
+- caption: Intro
+  chapters:
+    - file: markdown
+    - file: notebooks
+    - file: markdown-notebooks
+- caption: ΣΤΑΤΙΚΗ ΜΕ ΜΗΤΡΩΑ
+  chapters:
     - file: example5/example5.ipynb

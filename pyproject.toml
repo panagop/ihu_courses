@@ -17,6 +17,7 @@ cached-property = "^1.5.2"
 jupyter = "^1.0.0"
 jupyter-book = "^0.13.1"
 ghp-import = "^2.1.0"
+jupytext = "^1.14.1"
 
 
 [build-system]
