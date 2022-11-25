@@ -12,3 +12,4 @@ parts:
 - caption: ΣΤΑΤΙΚΗ ΜΕ ΜΗΤΡΩΑ
   chapters:
     - file: example5/example5.ipynb
+    - file: ../jupyter/ihu/statiki_me_mitroa/example4/example4.ipynb
