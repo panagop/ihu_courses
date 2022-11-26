@@ -618,86 +618,12 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;img\dof_global.png&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/panagop/ihu_courses/main/shared/images/mitroa/example4/dof_global.png&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\display.py:1045,</span> in <span class="ni">Image._data_and_metadata</span><span class="nt">(self, always_both)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1044</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1045</span>     <span class="n">b64_data</span> <span class="o">=</span> <span class="n">b2a_base64</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1046</span> <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-
-<span class="ne">TypeError</span>: a bytes-like object is required, not &#39;str&#39;
-
-<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\formatters.py:972,</span> in <span class="ni">MimeBundleFormatter.__call__</span><span class="nt">(self, obj, include, exclude)</span>
-<span class="g g-Whitespace">    </span><span class="mi">969</span>     <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">971</span>     <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">972</span>         <span class="k">return</span> <span class="n">method</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="n">include</span><span class="p">,</span> <span class="n">exclude</span><span class="o">=</span><span class="n">exclude</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">973</span>     <span class="k">return</span> <span class="kc">None</span>
-<span class="g g-Whitespace">    </span><span class="mi">974</span> <span class="k">else</span><span class="p">:</span>
-
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\display.py:1035,</span> in <span class="ni">Image._repr_mimebundle_</span><span class="nt">(self, include, exclude)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1033</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">embed</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1034</span>     <span class="n">mimetype</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mimetype</span>
-<span class="ne">-&gt; </span><span class="mi">1035</span>     <span class="n">data</span><span class="p">,</span> <span class="n">metadata</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_and_metadata</span><span class="p">(</span><span class="n">always_both</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1036</span>     <span class="k">if</span> <span class="n">metadata</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1037</span>         <span class="n">metadata</span> <span class="o">=</span> <span class="p">{</span><span class="n">mimetype</span><span class="p">:</span> <span class="n">metadata</span><span class="p">}</span>
-
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\display.py:1047,</span> in <span class="ni">Image._data_and_metadata</span><span class="nt">(self, always_both)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1045</span>     <span class="n">b64_data</span> <span class="o">=</span> <span class="n">b2a_base64</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1046</span> <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1047</span>     <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1048</span>         <span class="s2">&quot;No such file or directory: &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span> <span class="kn">from</span> <span class="nn">e</span>
-<span class="g g-Whitespace">   </span><span class="mi">1049</span> <span class="n">md</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="g g-Whitespace">   </span><span class="mi">1050</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span>: No such file or directory: &#39;img\dof_global.png&#39;
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\display.py:1045,</span> in <span class="ni">Image._data_and_metadata</span><span class="nt">(self, always_both)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1044</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1045</span>     <span class="n">b64_data</span> <span class="o">=</span> <span class="n">b2a_base64</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1046</span> <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-
-<span class="ne">TypeError</span>: a bytes-like object is required, not &#39;str&#39;
-
-<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\formatters.py:342,</span> in <span class="ni">BaseFormatter.__call__</span><span class="nt">(self, obj)</span>
-<span class="g g-Whitespace">    </span><span class="mi">340</span>     <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">341</span>     <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">342</span>         <span class="k">return</span> <span class="n">method</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">343</span>     <span class="k">return</span> <span class="kc">None</span>
-<span class="g g-Whitespace">    </span><span class="mi">344</span> <span class="k">else</span><span class="p">:</span>
-
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\display.py:1067,</span> in <span class="ni">Image._repr_png_</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1065</span> <span class="k">def</span> <span class="nf">_repr_png_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="g g-Whitespace">   </span><span class="mi">1066</span>     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">embed</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">format</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">_FMT_PNG</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1067</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_and_metadata</span><span class="p">()</span>
-
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\display.py:1047,</span> in <span class="ni">Image._data_and_metadata</span><span class="nt">(self, always_both)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1045</span>     <span class="n">b64_data</span> <span class="o">=</span> <span class="n">b2a_base64</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1046</span> <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1047</span>     <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1048</span>         <span class="s2">&quot;No such file or directory: &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span> <span class="kn">from</span> <span class="nn">e</span>
-<span class="g g-Whitespace">   </span><span class="mi">1049</span> <span class="n">md</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="g g-Whitespace">   </span><span class="mi">1050</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span>: No such file or directory: &#39;img\dof_global.png&#39;
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;IPython.core.display.Image object&gt;
-</pre></div>
-</div>
+<img alt="../../_images/example4_4_0.png" src="../../_images/example4_4_0.png" />
 </div>
 </div>
 <section id="id2">
