@@ -1,0 +1,5 @@
+﻿# References
+
+```{bibliography}
+:style: plain
+```
