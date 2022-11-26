@@ -40,8 +40,6 @@ width: 550px
 
 <!-- ![](images/enal/katholiki.png){style=background:white;width:550px}  -->
 
---
-
 ## Εφαρμογή εναλλακτών φορτίσεων
 
 ### Μέγιστη ροπή στην στήριξη Α
