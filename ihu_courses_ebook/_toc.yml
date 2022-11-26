@@ -24,3 +24,6 @@ parts:
   chapters:
     - file: markdown-03
       title: alternative title
+- caption: References
+  chapters:
+    - file: references
