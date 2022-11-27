@@ -13,6 +13,7 @@ parts:
   chapters:
     - file: mitroa/example4/example4.ipynb
     - file: mitroa/example5/example5.ipynb
+    - file: mitroa/example6/example6.ipynb
     - file: mitroa/example7/example7.ipynb
     - file: mitroa/example7/example7-trans.ipynb
     # - file: ../jupyter/ihu/statiki_me_mitroa/example4/example4.ipynb
