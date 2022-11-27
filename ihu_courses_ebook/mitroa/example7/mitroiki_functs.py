@@ -96,3 +96,42 @@ def P_point_load_at_distance_a(P: float, L: float, a: float, ignore_axial=True) 
                     [-(P*a/L**3)*(L**2 - b**2 + a*b)],
                     [P*a**2*b/L**2]])        
     return p
+
+
+# def TranformMatrix(theta: float) -> Matrix:
+#     """Return the transformation matrix for an element.
+
+#     Args:
+#         theta: Angle of the element.
+
+#     Returns:
+#         The transformation matrix for the element.
+#     """
+#     c = sym.cos(theta)
+#     s = sym.sin(theta)
+#     T = Matrix([[c, s, 0, 0, 0, 0],
+#                 [-s, c, 0, 0, 0, 0],
+#                 [0, 0, 1, 0, 0, 0],
+#                 [0, 0, 0, c, s, 0],
+#                 [0, 0, 0, -s, c, 0],
+#                 [0, 0, 0, 0, 0, 1]])
+#     return T
+
+def TranformMatrix(theta: float) -> Matrix:
+    """Return the transformation matrix for an element.
+
+    Args:
+        theta: Angle of the element.
+
+    Returns:
+        The transformation matrix for the element.
+    """
+    c = sym.cos(theta)
+    s = sym.sin(theta)
+    T = Matrix([[c, -s, 0, 0, 0, 0],
+                [s, c, 0, 0, 0, 0],
+                [0, 0, 1, 0, 0, 0],
+                [0, 0, 0, c, -s, 0],
+                [0, 0, 0, s, c, 0],
+                [0, 0, 0, 0, 0, 1]])
+    return T
