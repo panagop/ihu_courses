@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Εφαρμογή 6 &#8212; My sample book</title>
+    <title>Εφαρμογή 7 - Χρήση μητρώων μετασχηματισμού &#8212; My sample book</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Διαστασιολόγηση δοκών" href="../../markdown-01.html" />
-    <link rel="prev" title="Εφαρμογή 6" href="example7.html" />
+    <link rel="prev" title="Εφαρμογή 7" href="example7.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -155,12 +155,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="example7.html">
-   Εφαρμογή 6
+   Εφαρμογή 7
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Εφαρμογή 6
+   Εφαρμογή 7 - Χρήση μητρώων μετασχηματισμού
   </a>
  </li>
 </ul>
@@ -495,7 +495,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Εφαρμογή 6</h1>
+                <h1>Εφαρμογή 7 - Χρήση μητρώων μετασχηματισμού</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -590,7 +590,7 @@ title="Print to PDF"
 </div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>Εφαρμογή 6<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<h1>Εφαρμογή 7 - Χρήση μητρώων μετασχηματισμού<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
 <p>Να υπολογιστούν οι αντιδράσεις στήριξης, οι παραμορφώσεις και τα διαγράμματα των εντατικών μεγεθών για τον φορέα του σχήματος.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -674,6 +674,7 @@ title="Print to PDF"
 <img alt="../../_images/example7-trans_10_0.png" src="../../_images/example7-trans_10_0.png" />
 </div>
 </div>
+<p>Το στοιχείο 1 σχηματίζει γωνία 90 μοιρών με το καθολικό σύστημα συντεταγμένων, ενώ το στοιχείο 3 γωνία -90.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Λ1</span> <span class="o">=</span> <span class="n">TranformMatrix</span><span class="p">(</span><span class="n">sym</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
@@ -726,7 +727,7 @@ title="Print to PDF"
 <section id="id4">
 <h2>Μητρώο στιβαρότητας φορέα<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
 <p>Είναι διαστάσεων 12x12 και δημιουργείται από το συνδυασμό των επιμέρους μητρώων, βάσει της αντιστοίχισης των βαθμών ελευθερίας στο καθολικό σύστημα συντεταγμένων</p>
-<p>Δημιουργείται ένα μηδενικό μητρώο 9x9 και σταδιακά προστίθενται οι τιμές στις κατάλληλες θέσεις</p>
+<p>Δημιουργείται ένα μηδενικό μητρώο 12x12 και σταδιακά προστίθενται οι τιμές στις κατάλληλες θέσεις</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Καθολ. Συστ.</p></th>
@@ -873,7 +874,7 @@ title="Print to PDF"
 </section>
 <section id="id6">
 <h2>Δεσμευμένοι και ελεύθεροι βαθμοί ελευθερίας<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h2>
-<p>Ο μοναδικός ελεύθερος βαθμός ελευθερίας είναι ο <span style="color:blue">(5)</span>, ενώ όλοι οι υπόλοιποι είναι δεσμευμένοι λόγω των τριών πακτώσεων στους κόμβους 1, 3 και 4 και της σύνδεσής των στοιχείων με τον κόμβο 2, αγνοώντας τους αξονικούς βαθμούς ελευθερίας.</p>
+<p>Οι δεσμευμένοι βαθμοί ελευθερίας (με κόκκινο) οφείλονται στις πακτώσεις στους κόμβους 1 και 4, ενώ οι βαθμοί ελευθερίας 4-9 είναι αδέσμευτοι.</p>
 </section>
 <section id="id7">
 <h2>Διαχωρισμός μητρώων<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h2>
@@ -946,93 +947,18 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/example7-trans_27_0.png" src="../../_images/example7-trans_27_0.png" />
+<img alt="../../_images/example7-trans_28_0.png" src="../../_images/example7-trans_28_0.png" />
 </div>
 </div>
 <p>Ομοίως και για τα μητρώα εξωτερικής φόρτισης, παραμορφώσεων και αντιδράσεων</p>
 <!-- <img src="img\PUR.png" width="750"> --><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/panagop/ihu_courses/main/shared/images/mitroa/example7/PUR.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1100</span><span class="p">)</span>
-<span class="n">Image</span><span class="p">(</span><span class="s1">&#39;img\PUR.png&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/panagop/ihu_courses/main/shared/images/mitroa/example7/PUR.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\display.py:1045,</span> in <span class="ni">Image._data_and_metadata</span><span class="nt">(self, always_both)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1044</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1045</span>     <span class="n">b64_data</span> <span class="o">=</span> <span class="n">b2a_base64</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1046</span> <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-
-<span class="ne">TypeError</span>: a bytes-like object is required, not &#39;str&#39;
-
-<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\formatters.py:972,</span> in <span class="ni">MimeBundleFormatter.__call__</span><span class="nt">(self, obj, include, exclude)</span>
-<span class="g g-Whitespace">    </span><span class="mi">969</span>     <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">971</span>     <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">972</span>         <span class="k">return</span> <span class="n">method</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="n">include</span><span class="p">,</span> <span class="n">exclude</span><span class="o">=</span><span class="n">exclude</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">973</span>     <span class="k">return</span> <span class="kc">None</span>
-<span class="g g-Whitespace">    </span><span class="mi">974</span> <span class="k">else</span><span class="p">:</span>
-
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\display.py:1035,</span> in <span class="ni">Image._repr_mimebundle_</span><span class="nt">(self, include, exclude)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1033</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">embed</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1034</span>     <span class="n">mimetype</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mimetype</span>
-<span class="ne">-&gt; </span><span class="mi">1035</span>     <span class="n">data</span><span class="p">,</span> <span class="n">metadata</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_and_metadata</span><span class="p">(</span><span class="n">always_both</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1036</span>     <span class="k">if</span> <span class="n">metadata</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1037</span>         <span class="n">metadata</span> <span class="o">=</span> <span class="p">{</span><span class="n">mimetype</span><span class="p">:</span> <span class="n">metadata</span><span class="p">}</span>
-
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\display.py:1047,</span> in <span class="ni">Image._data_and_metadata</span><span class="nt">(self, always_both)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1045</span>     <span class="n">b64_data</span> <span class="o">=</span> <span class="n">b2a_base64</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1046</span> <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1047</span>     <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1048</span>         <span class="s2">&quot;No such file or directory: &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span> <span class="kn">from</span> <span class="nn">e</span>
-<span class="g g-Whitespace">   </span><span class="mi">1049</span> <span class="n">md</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="g g-Whitespace">   </span><span class="mi">1050</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span>: No such file or directory: &#39;img\PUR.png&#39;
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\display.py:1045,</span> in <span class="ni">Image._data_and_metadata</span><span class="nt">(self, always_both)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1044</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1045</span>     <span class="n">b64_data</span> <span class="o">=</span> <span class="n">b2a_base64</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1046</span> <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-
-<span class="ne">TypeError</span>: a bytes-like object is required, not &#39;str&#39;
-
-<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\formatters.py:342,</span> in <span class="ni">BaseFormatter.__call__</span><span class="nt">(self, obj)</span>
-<span class="g g-Whitespace">    </span><span class="mi">340</span>     <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">341</span>     <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">342</span>         <span class="k">return</span> <span class="n">method</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">343</span>     <span class="k">return</span> <span class="kc">None</span>
-<span class="g g-Whitespace">    </span><span class="mi">344</span> <span class="k">else</span><span class="p">:</span>
-
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\display.py:1067,</span> in <span class="ni">Image._repr_png_</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1065</span> <span class="k">def</span> <span class="nf">_repr_png_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="g g-Whitespace">   </span><span class="mi">1066</span>     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">embed</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">format</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">_FMT_PNG</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1067</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data_and_metadata</span><span class="p">()</span>
-
-<span class="nn">File D:\mypython_projects\ihu_courses\.venv\lib\site-packages\IPython\core\display.py:1047,</span> in <span class="ni">Image._data_and_metadata</span><span class="nt">(self, always_both)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1045</span>     <span class="n">b64_data</span> <span class="o">=</span> <span class="n">b2a_base64</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1046</span> <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1047</span>     <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1048</span>         <span class="s2">&quot;No such file or directory: &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span> <span class="kn">from</span> <span class="nn">e</span>
-<span class="g g-Whitespace">   </span><span class="mi">1049</span> <span class="n">md</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="g g-Whitespace">   </span><span class="mi">1050</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span>: No such file or directory: &#39;img\PUR.png&#39;
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;IPython.core.display.Image object&gt;
-</pre></div>
-</div>
+<img alt="../../_images/example7-trans_30_0.png" src="../../_images/example7-trans_30_0.png" />
 </div>
 </div>
 <section id="id8">
@@ -1077,8 +1003,6 @@ title="Print to PDF"
 \[\begin{split}\displaystyle \left[\begin{matrix}50\\0\\-300\\50\\0\\700\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
-<p>Ομοίως με το μητρώο <span class="math notranslate nohighlight">\(K_{UU}\)</span> και το <span class="math notranslate nohighlight">\(P_{U}\)</span> στην περίπτωσή μας είναι απλά ένας αριθμος.</p>
-<p>Οπότε η λύση για τον υπολογισμό του <span class="math notranslate nohighlight">\(U_5\)</span> που επίσης είναι ένας αριθμός, είναι μια απλή διαίρεση</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P_R</span> <span class="o">=</span> <span class="n">P</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">],</span> <span class="mi">0</span><span class="p">]</span>
@@ -1210,53 +1134,6 @@ title="Print to PDF"
 <img alt="../../_images/example7-trans_45_5.png" src="../../_images/example7-trans_45_5.png" />
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># U1, U2, U3, U4, U5, U6, U7, U8, U9, U10, U11, U12 = sym.symbols(&#39;U1 U2 U3 U4 U5 U6 U7 U8 U9 U10 U11 U12&#39;)</span>
-<span class="c1"># P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12 = sym.symbols(&#39;P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12&#39;)</span>
-<span class="c1"># R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12 = sym.symbols(&#39;R1 R2 R3 R4 R5 R6 R7 R8 R9 R10 R11 R12&#39;)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># U = Matrix([[U1], [U2], [U3], [U4], [U5], [U6], [U7], [U8], [U9], [U10], [U11], [U12]])</span>
-<span class="c1"># U</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># U.subs(U1, 0).subs(U2, 0).subs(U3, 0).subs(U10, 0).subs(U11, 0).subs(U12, 0)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># P = Matrix([[P1], [P2], [P3], [P4], [P5], [P6], [P7]])</span>
-<span class="c1"># P</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># R = Matrix([[R1], [R2], [R3], [R4], [R5], [R6], [R7], [R8], [R9], [R10], [R11], [R12]])</span>
-<span class="c1"># R</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># R.subs(R4, 0).subs(R5, 0).subs(R6, 0).subs(R7, 0).subs(R8, 0).subs(R9, 0)</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 </section>
 
@@ -1291,7 +1168,7 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Εφαρμογή 6</p>
+            <p class="prev-next-title">Εφαρμογή 7</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../../markdown-01.html" title="next page">
