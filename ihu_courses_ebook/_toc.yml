@@ -17,6 +17,7 @@ parts:
     - file: mitroa/example7/example7.ipynb
     - file: mitroa/example7/example7-trans.ipynb
     - file: mitroa/example8/example8-trans.ipynb
+    - file: mitroa/example9/example9.ipynb
     # - file: ../jupyter/ihu/statiki_me_mitroa/example4/example4.ipynb
 - caption: ΟΠΛΙΣΜΕΝΟ ΣΚΥΡΟΔΕΜΑ
   chapters:
