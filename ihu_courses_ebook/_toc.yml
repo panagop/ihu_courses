@@ -9,28 +9,36 @@ parts:
     - file: markdown
     - file: notebooks
     - file: markdown-notebooks
+
 - caption: ΣΤΑΤΙΚΗ ΜΕ ΜΗΤΡΩΑ
   chapters:
-    - file: mitroa/example4/example4.ipynb
+  - file: mitroa/example4/example4.ipynb
+    sections:
+    # - file: mitroa/example4/example4.ipynb
     - file: mitroa/example5/example5.ipynb
     - file: mitroa/example6/example6.ipynb
     - file: mitroa/example7/example7.ipynb
     - file: mitroa/example7/example7-trans.ipynb
     - file: mitroa/example8/example8-trans.ipynb
     - file: mitroa/example9/example9.ipynb
+    # - file: mitroa/pi_sap/pi_sap_shear.md
     # - file: ../jupyter/ihu/statiki_me_mitroa/example4/example4.ipynb
+
 - caption: ΟΠΛΙΣΜΕΝΟ ΣΚΥΡΟΔΕΜΑ
   chapters:
   - file: markdown-01
     sections:
     - file: concrete/enal_loads
+
 - caption: ΟΠΛΙΣΜΕΝΟ ΣΚΥΡΟΔΕΜΑ ΙΙ
   chapters:
     - file: markdown-02
+
 - caption: ΟΠΛΙΣΜΕΝΟ ΣΚΥΡΟΔΕΜΑ ΙΙΙ
   chapters:
     - file: markdown-03
       title: alternative title
+      
 - caption: References
   chapters:
     - file: references
