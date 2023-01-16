@@ -6,56 +6,56 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Εφαρμογή 7 - Χρήση μητρώων μετασχηματισμού &#8212; My sample book</title>
+    <title>Εφαρμογή 8 - Χρήση μητρώων μετασχηματισμού σε μη ορθογωνικό φορέα &#8212; My sample book</title>
     
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
-    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Εφαρμογή 8 - Χρήση μητρώων μετασχηματισμού σε μη ορθογωνικό φορέα" href="../example8/example8-trans.html" />
-    <link rel="prev" title="Εφαρμογή 7" href="example7.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Εφαρμογή 9 - Δικτύωμα" href="../example9/example9.html" />
+    <link rel="prev" title="Εφαρμογή 7 - Χρήση μητρώων μετασχηματισμού" href="../example7/example7-trans.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -90,19 +90,19 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="bd-sidebar noprint" id="site-navigation">
     <div class="bd-sidebar__content">
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../index.html">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
       
       
-      <img src="../../_static/logo.png" class="logo" alt="logo">
+      <img src="../../../_static/logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">My sample book</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -110,7 +110,7 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../../intro.html">
+                <a class="reference internal" href="../../../intro.html">
                     Welcome to your Jupyter Book
                 </a>
             </li>
@@ -122,17 +122,17 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../markdown.html">
+  <a class="reference internal" href="../../../markdown.html">
    Markdown Files
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../notebooks.html">
+  <a class="reference internal" href="../../../notebooks.html">
    Content with notebooks
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../markdown-notebooks.html">
+  <a class="reference internal" href="../../../markdown-notebooks.html">
    Notebooks with MyST Markdown
   </a>
  </li>
@@ -143,40 +143,94 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../example4/example4.html">
-   Εφαρμογή 4
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../examples.html">
+   Εφαρμογές
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../example4/example4.html">
+     Εφαρμογή 4
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../example5/example5.html">
+     Εφαρμογή 5
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../example6/example6.html">
+     Εφαρμογή 6
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../example7/example7.html">
+     Εφαρμογή 7
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../example7/example7-trans.html">
+     Εφαρμογή 7 - Χρήση μητρώων μετασχηματισμού
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Εφαρμογή 8 - Χρήση μητρώων μετασχηματισμού σε μη ορθογωνικό φορέα
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../example9/example9.html">
+     Εφαρμογή 9 - Δικτύωμα
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../example5/example5.html">
-   Εφαρμογή 5
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../modelling.html">
+   Προσομοίωση σε λογισμικό
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../example6/example6.html">
-   Εφαρμογή 6
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="example7.html">
-   Εφαρμογή 7
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Εφαρμογή 7 - Χρήση μητρώων μετασχηματισμού
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../example8/example8-trans.html">
-   Εφαρμογή 8 - Χρήση μητρώων μετασχηματισμού σε μη ορθογωνικό φορέα
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../example9/example9.html">
-   Εφαρμογή 9 - Δικτύωμα
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../modelling/statics_vs_sap.html">
+     Στατική vs SAP2000
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../modelling/sap2000_default.html">
+     Επίλυση πλαισίου με το SAP2000 (default)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../modelling/sap2000_no_shear.html">
+     Επίλυση πλαισίου με το SAP2000 (αγνοώντας το έργο των τεμνουσών)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../modelling/frame2d_pi.html">
+     Επίλυση πλαισίου με το Frame2d
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../modelling/sap2000_truss.html">
+     Επίλυση δικτυώματος με το SAP2000
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../modelling/frame2d_truss.html">
+     Επίλυση δικτυώματος με το Frame2d
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -186,17 +240,17 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../markdown-01.html">
+  <a class="reference internal" href="../../../markdown-01.html">
    Διαστασιολόγηση δοκών
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../concrete/enal_loads.html">
+    <a class="reference internal" href="../../../concrete/enal_loads.html">
      Παράδειγμα χρήσης εναλλακτών φορτίσεων σε δοκό
     </a>
    </li>
@@ -210,7 +264,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../markdown-02.html">
+  <a class="reference internal" href="../../../markdown-02.html">
    ΟΠΛΙΣΜΕΝΟ ΣΚΥΡΟΔΕΜΑ ΙI - tmp
   </a>
  </li>
@@ -222,7 +276,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../markdown-03.html">
+  <a class="reference internal" href="../../../markdown-03.html">
    alternative title
   </a>
  </li>
@@ -234,7 +288,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../references.html">
+  <a class="reference internal" href="../../../references.html">
    References
   </a>
  </li>
@@ -297,7 +351,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/panagop/ihu_courses/main?urlpath=tree/ihu_courses_ebook/mitroa/example7/example7-trans.ipynb"
+        <a href="https://mybinder.org/v2/gh/panagop/ihu_courses/main?urlpath=tree/ihu_courses_ebook/mitroa/examples/example8/example8-trans.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -307,7 +361,7 @@ title="Launch on Binder"
 
 <span class="headerbtn__icon-container">
   
-    <img src="../../_static/images/logo_binder.svg">
+    <img src="../../../_static/images/logo_binder.svg">
   </span>
 <span class="headerbtn__text-container">Binder</span>
 </a>
@@ -357,7 +411,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/panagop/ihu_courses//issues/new?title=Issue%20on%20page%20%2Fmitroa/example7/example7-trans.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/panagop/ihu_courses//issues/new?title=Issue%20on%20page%20%2Fmitroa/examples/example8/example8-trans.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -385,7 +439,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/mitroa/example7/example7-trans.ipynb"
+        <a href="../../../_sources/mitroa/examples/example8/example8-trans.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -446,53 +500,58 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Μητρώα στιβαρότητας στοιχείων
+   Αντιστοίχιση τοπικών - καθολικών βαθμών ελευθερίας
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   Μητρώα μετασχηματισμού και μετατροπή των μητρώων στιβαρότητας
+   Μητρώα στιβαρότητας στοιχείων
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
-   Μητρώο στιβαρότητας φορέα
+   Μητρώα μετασχηματισμού και μετατροπή των μητρώων στιβαρότητας
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
-   Μητρώο εξωτερικής φόρτισης
+   Μητρώο στιβαρότητας φορέα
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id6">
-   Δεσμευμένοι και ελεύθεροι βαθμοί ελευθερίας
+   Μητρώο εξωτερικής φόρτισης
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id7">
+   Δεσμευμένοι και ελεύθεροι βαθμοί ελευθερίας
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
    Διαχωρισμός μητρώων
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id8">
+    <a class="reference internal nav-link" href="#id9">
      Υπομητρώα στιβαρότητας
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
+    <a class="reference internal nav-link" href="#id10">
      Υπομητρώα εξωτερικής φόρτισης
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id10">
+  <a class="reference internal nav-link" href="#id11">
    Υπολογισμός παραμορφώσεων
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id11">
+  <a class="reference internal nav-link" href="#id12">
    Υπολογισμός αντιδράσεων στήριξης
   </a>
  </li>
@@ -510,7 +569,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Εφαρμογή 7 - Χρήση μητρώων μετασχηματισμού</h1>
+                <h1>Εφαρμογή 8 - Χρήση μητρώων μετασχηματισμού σε μη ορθογωνικό φορέα</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -522,53 +581,58 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Μητρώα στιβαρότητας στοιχείων
+   Αντιστοίχιση τοπικών - καθολικών βαθμών ελευθερίας
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   Μητρώα μετασχηματισμού και μετατροπή των μητρώων στιβαρότητας
+   Μητρώα στιβαρότητας στοιχείων
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
-   Μητρώο στιβαρότητας φορέα
+   Μητρώα μετασχηματισμού και μετατροπή των μητρώων στιβαρότητας
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
-   Μητρώο εξωτερικής φόρτισης
+   Μητρώο στιβαρότητας φορέα
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id6">
-   Δεσμευμένοι και ελεύθεροι βαθμοί ελευθερίας
+   Μητρώο εξωτερικής φόρτισης
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id7">
+   Δεσμευμένοι και ελεύθεροι βαθμοί ελευθερίας
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
    Διαχωρισμός μητρώων
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id8">
+    <a class="reference internal nav-link" href="#id9">
      Υπομητρώα στιβαρότητας
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
+    <a class="reference internal nav-link" href="#id10">
      Υπομητρώα εξωτερικής φόρτισης
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id10">
+  <a class="reference internal nav-link" href="#id11">
    Υπολογισμός παραμορφώσεων
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id11">
+  <a class="reference internal nav-link" href="#id12">
    Υπολογισμός αντιδράσεων στήριξης
   </a>
  </li>
@@ -591,9 +655,12 @@ title="Print to PDF"
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sym</span>
 <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Matrix</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
 <span class="kn">from</span> <span class="nn">mitroiki_functs</span> <span class="kn">import</span> <span class="n">K_with_axial</span>
 <span class="kn">from</span> <span class="nn">mitroiki_functs</span> <span class="kn">import</span> <span class="n">TranformMatrix</span>
 <span class="kn">from</span> <span class="nn">mitroiki_functs</span> <span class="kn">import</span> <span class="n">round_expr</span>
+<span class="kn">from</span> <span class="nn">mitroiki_functs</span> <span class="kn">import</span> <span class="n">P_uniformly_distributed_load</span>
 
 <span class="kn">import</span> <span class="nn">openseespy.opensees</span> <span class="k">as</span> <span class="nn">ops</span>
 <span class="kn">import</span> <span class="nn">opsvis</span> <span class="k">as</span> <span class="nn">opsv</span>
@@ -605,16 +672,16 @@ title="Print to PDF"
 </div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>Εφαρμογή 7 - Χρήση μητρώων μετασχηματισμού<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<h1>Εφαρμογή 8 - Χρήση μητρώων μετασχηματισμού σε μη ορθογωνικό φορέα<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
 <p>Να υπολογιστούν οι αντιδράσεις στήριξης, οι παραμορφώσεις και τα διαγράμματα των εντατικών μεγεθών για τον φορέα του σχήματος.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/panagop/ihu_courses/main/shared/images/mitroa/example7/ekfonisi.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/panagop/ihu_courses/main/shared/images/mitroa/example8/ekfonisi.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/example7-trans_3_0.png" src="../../_images/example7-trans_3_0.png" />
+<img alt="../../../_images/example8-trans_3_0.png" src="../../../_images/example8-trans_3_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -633,14 +700,89 @@ title="Print to PDF"
 <span class="n">Ic</span> <span class="o">=</span> <span class="n">bc</span> <span class="o">*</span> <span class="n">hc</span><span class="o">**</span><span class="mi">3</span> <span class="o">/</span> <span class="mi">12</span>
 <span class="n">Ac</span> <span class="o">=</span> <span class="n">bc</span> <span class="o">*</span> <span class="n">hc</span>
 
-<span class="n">Lx</span> <span class="o">=</span> <span class="mf">4.0</span>
-<span class="n">Ly</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="n">L1</span> <span class="o">=</span> <span class="mf">2.0</span>
+<span class="n">L2</span> <span class="o">=</span> <span class="mf">4.0</span>
+<span class="n">L3</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="n">L4</span> <span class="o">=</span> <span class="mf">3.0</span>
 
-<span class="n">F2</span> <span class="o">=</span> <span class="n">F3</span> <span class="o">=</span> <span class="mf">50.</span>
-<span class="n">M2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">300</span>
-<span class="n">M3</span> <span class="o">=</span> <span class="mi">700</span>
+<span class="n">F2</span> <span class="o">=</span> <span class="mf">100.</span>
+<span class="n">q</span> <span class="o">=</span> <span class="mf">40.</span>
 </pre></div>
 </div>
+</div>
+</div>
+<section id="id2">
+<h2>Αντιστοίχιση τοπικών - καθολικών βαθμών ελευθερίας<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Καθολ. Συστ.</p></th>
+<th class="head"><p>(1)</p></th>
+<th class="head"><p>(2)</p></th>
+<th class="head"><p>(3)</p></th>
+<th class="head"><p>(4)</p></th>
+<th class="head"><p>(5)</p></th>
+<th class="head"><p>(6)</p></th>
+<th class="head"><p>(7)</p></th>
+<th class="head"><p>(8)</p></th>
+<th class="head"><p>(9)</p></th>
+<th class="head"><p>(10)</p></th>
+<th class="head"><p>(11)</p></th>
+<th class="head"><p>(12)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1-2</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>2-3</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>3-4</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+</tr>
+</tbody>
+</table>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/panagop/ihu_courses/main/shared/images/mitroa/example8/dof_global_local.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">750</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/example8-trans_7_0.png" src="../../../_images/example8-trans_7_0.png" />
 </div>
 </div>
 <!-- ## Αντιστοίχιση τοπικών - καθολικών βαθμών ελευθερίας
@@ -649,24 +791,44 @@ title="Print to PDF"
 |--------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|------|------|------|
 | 1-2          | -2  |  1  |  3  | -5  |  4  |  6  |     |     |     |      |      |      |
 | 2-3          |     |     |     |  1  |  2  |  3  |  4  |  5  |  6  |      |      |      |
-| 3-4          |     |     |     |     |     |     |  2  | -1  |  3  |  5   | -4   |  6   | --><section id="id2">
-<h2>Μητρώα στιβαρότητας στοιχείων<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
-<p>Τα στοιχεία 1 και 3 έχουν όμοια μητρώα στιβαρότητας</p>
+| 3-4          |     |     |     |     |     |     |  2  | -1  |  3  |  5   | -4   |  6   | --></section>
+<section id="id3">
+<h2>Μητρώα στιβαρότητας στοιχείων<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<p>Τα μήκη των στοιχείων υπολογίζονται ως εξής:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K1</span> <span class="o">=</span> <span class="n">K3</span> <span class="o">=</span> <span class="n">K_with_axial</span><span class="p">(</span><span class="n">E</span><span class="o">=</span><span class="n">E</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="n">Ac</span><span class="p">,</span> <span class="n">I</span><span class="o">=</span><span class="n">Ic</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">Ly</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">L12</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">L1</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">L4</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">L23</span> <span class="o">=</span> <span class="n">L2</span>
+<span class="n">L34</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">L3</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">L4</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;L12 = </span><span class="si">{</span><span class="n">L12</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">m&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;L23 = </span><span class="si">{</span><span class="n">L23</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">m&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;L34 = </span><span class="si">{</span><span class="n">L34</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">m&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>L12 = 3.606m
+L23 = 4.000m
+L34 = 4.243m
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K1</span> <span class="o">=</span> <span class="n">K_with_axial</span><span class="p">(</span><span class="n">E</span><span class="o">=</span><span class="n">E</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="n">Ac</span><span class="p">,</span> <span class="n">I</span><span class="o">=</span><span class="n">Ic</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L12</span><span class="p">)</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">K1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}1600000.0 &amp; 0 &amp; 0 &amp; -1600000.0 &amp; 0 &amp; 0\\0 &amp; 28444.4 &amp; 42666.7 &amp; 0 &amp; -28444.4 &amp; 42666.7\\0 &amp; 42666.7 &amp; 85333.3 &amp; 0 &amp; -42666.7 &amp; 42666.7\\-1600000.0 &amp; 0 &amp; 0 &amp; 1600000.0 &amp; 0 &amp; 0\\0 &amp; -28444.4 &amp; -42666.7 &amp; 0 &amp; 28444.4 &amp; -42666.7\\0 &amp; 42666.7 &amp; 42666.7 &amp; 0 &amp; -42666.7 &amp; 85333.3\end{matrix}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{matrix}1331280.5 &amp; 0 &amp; 0 &amp; -1331280.5 &amp; 0 &amp; 0\\0 &amp; 16385.0 &amp; 29538.5 &amp; 0 &amp; -16385.0 &amp; 29538.5\\0 &amp; 29538.5 &amp; 71001.6 &amp; 0 &amp; -29538.5 &amp; 35500.8\\-1331280.5 &amp; 0 &amp; 0 &amp; 1331280.5 &amp; 0 &amp; 0\\0 &amp; -16385.0 &amp; -29538.5 &amp; 0 &amp; 16385.0 &amp; -29538.5\\0 &amp; 29538.5 &amp; 35500.8 &amp; 0 &amp; -29538.5 &amp; 71001.6\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K2</span> <span class="o">=</span> <span class="n">K_with_axial</span><span class="p">(</span><span class="n">E</span><span class="o">=</span><span class="n">E</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="n">Aw</span><span class="p">,</span> <span class="n">I</span><span class="o">=</span><span class="n">Iw</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">Lx</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K2</span> <span class="o">=</span> <span class="n">K_with_axial</span><span class="p">(</span><span class="n">E</span><span class="o">=</span><span class="n">E</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="n">Aw</span><span class="p">,</span> <span class="n">I</span><span class="o">=</span><span class="n">Iw</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L23</span><span class="p">)</span>
 <span class="n">round_expr</span><span class="p">(</span><span class="n">K2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -676,9 +838,21 @@ title="Print to PDF"
 \[\begin{split}\displaystyle \left[\begin{matrix}1350000.0 &amp; 0 &amp; 0 &amp; -1350000.0 &amp; 0 &amp; 0\\0 &amp; 30375.0 &amp; 60750.0 &amp; 0 &amp; -30375.0 &amp; 60750.0\\0 &amp; 60750.0 &amp; 162000.0 &amp; 0 &amp; -60750.0 &amp; 81000.0\\-1350000.0 &amp; 0 &amp; 0 &amp; 1350000.0 &amp; 0 &amp; 0\\0 &amp; -30375.0 &amp; -60750.0 &amp; 0 &amp; 30375.0 &amp; -60750.0\\0 &amp; 60750.0 &amp; 81000.0 &amp; 0 &amp; -60750.0 &amp; 162000.0\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K3</span> <span class="o">=</span> <span class="n">K_with_axial</span><span class="p">(</span><span class="n">E</span><span class="o">=</span><span class="n">E</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="n">Ac</span><span class="p">,</span> <span class="n">I</span><span class="o">=</span><span class="n">Ic</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L34</span><span class="p">)</span>
+<span class="n">round_expr</span><span class="p">(</span><span class="n">K3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}\displaystyle \left[\begin{matrix}1131370.8 &amp; 0 &amp; 0 &amp; -1131370.8 &amp; 0 &amp; 0\\0 &amp; 10056.6 &amp; 21333.3 &amp; 0 &amp; -10056.6 &amp; 21333.3\\0 &amp; 21333.3 &amp; 60339.8 &amp; 0 &amp; -21333.3 &amp; 30169.9\\-1131370.8 &amp; 0 &amp; 0 &amp; 1131370.8 &amp; 0 &amp; 0\\0 &amp; -10056.6 &amp; -21333.3 &amp; 0 &amp; 10056.6 &amp; -21333.3\\0 &amp; 21333.3 &amp; 30169.9 &amp; 0 &amp; -21333.3 &amp; 60339.8\end{matrix}\right]\end{split}\]</div>
+</div>
+</div>
 </section>
-<section id="id3">
-<h2>Μητρώα μετασχηματισμού και μετατροπή των μητρώων στιβαρότητας<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<section id="id4">
+<h2>Μητρώα μετασχηματισμού και μετατροπή των μητρώων στιβαρότητας<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/panagop/ihu_courses/main/shared/images/mitroa/trans_matrix.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">230</span><span class="p">)</span>
@@ -686,20 +860,47 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/example7-trans_10_0.png" src="../../_images/example7-trans_10_0.png" />
+<img alt="../../../_images/example8-trans_15_0.png" src="../../../_images/example8-trans_15_0.png" />
 </div>
 </div>
-<p>Το στοιχείο 1 σχηματίζει γωνία 90 μοιρών με το καθολικό σύστημα συντεταγμένων, ενώ το στοιχείο 3 γωνία -90.</p>
+<p>Το στοιχείο 1 σχηματίζει γωνία <span class="math notranslate nohighlight">\(θ_1\)</span> μοιρών με το καθολικό σύστημα συντεταγμένων, ενώ το στοιχείο 3 γωνία <span class="math notranslate nohighlight">\(θ_3\)</span>.</p>
+<p>Προφανώς η γωνία για το στοιχείο 2 είναι 0 (οριζόντιο).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Λ1</span> <span class="o">=</span> <span class="n">TranformMatrix</span><span class="p">(</span><span class="n">sym</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">θ1</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">atan</span><span class="p">(</span><span class="n">L4</span><span class="o">/</span><span class="n">L1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;θ1 = </span><span class="si">{</span><span class="n">θ1</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">rad = </span><span class="si">{</span><span class="n">θ1</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">μοίρες&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>θ1 = 0.9828rad = 56.31μοίρες
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">θ3</span> <span class="o">=</span> <span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">atan</span><span class="p">(</span><span class="n">L4</span><span class="o">/</span><span class="n">L3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;θ3 = </span><span class="si">{</span><span class="n">θ3</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">rad = </span><span class="si">{</span><span class="n">θ3</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">μοίρες&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>θ3 = -0.7854rad = -45.00μοίρες
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Λ1</span> <span class="o">=</span> <span class="n">TranformMatrix</span><span class="p">(</span><span class="n">θ1</span><span class="p">)</span>
 <span class="n">Λ1</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}0 &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; -1 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\end{matrix}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{matrix}0.554700196225229 &amp; -0.832050294337844 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0.832050294337844 &amp; 0.554700196225229 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0.554700196225229 &amp; -0.832050294337844 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0.832050294337844 &amp; 0.554700196225229 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -711,19 +912,19 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}28444.4 &amp; 0 &amp; -42666.7 &amp; -28444.4 &amp; 0 &amp; -42666.7\\0 &amp; 1600000.0 &amp; 0 &amp; 0 &amp; -1600000.0 &amp; 0\\-42666.7 &amp; 0 &amp; 85333.3 &amp; 42666.7 &amp; 0 &amp; 42666.7\\-28444.4 &amp; 0 &amp; 42666.7 &amp; 28444.4 &amp; 0 &amp; 42666.7\\0 &amp; -1600000.0 &amp; 0 &amp; 0 &amp; 1600000.0 &amp; 0\\-42666.7 &amp; 0 &amp; 42666.7 &amp; 42666.7 &amp; 0 &amp; 85333.3\end{matrix}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{matrix}420968.2 &amp; 606874.8 &amp; -24577.5 &amp; -420968.2 &amp; -606874.8 &amp; -24577.5\\606874.8 &amp; 926697.2 &amp; 16385.0 &amp; -606874.8 &amp; -926697.2 &amp; 16385.0\\-24577.5 &amp; 16385.0 &amp; 71001.6 &amp; 24577.5 &amp; -16385.0 &amp; 35500.8\\-420968.2 &amp; -606874.8 &amp; 24577.5 &amp; 420968.2 &amp; 606874.8 &amp; 24577.5\\-606874.8 &amp; -926697.2 &amp; -16385.0 &amp; 606874.8 &amp; 926697.2 &amp; -16385.0\\-24577.5 &amp; 16385.0 &amp; 35500.8 &amp; 24577.5 &amp; -16385.0 &amp; 71001.6\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Λ3</span> <span class="o">=</span> <span class="n">TranformMatrix</span><span class="p">(</span><span class="o">-</span><span class="n">sym</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">Λ3</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Λ3</span> <span class="o">=</span> <span class="n">TranformMatrix</span><span class="p">(</span><span class="n">θ3</span><span class="p">)</span>
+<span class="n">round_expr</span><span class="p">(</span><span class="n">Λ3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0\\0 &amp; 0 &amp; 0 &amp; -1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\end{matrix}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{matrix}0.7071 &amp; 0.7071 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-0.7071 &amp; 0.7071 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0.7071 &amp; 0.7071 &amp; 0\\0 &amp; 0 &amp; 0 &amp; -0.7071 &amp; 0.7071 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -735,12 +936,12 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}28444.4 &amp; 0 &amp; 42666.7 &amp; -28444.4 &amp; 0 &amp; 42666.7\\0 &amp; 1600000.0 &amp; 0 &amp; 0 &amp; -1600000.0 &amp; 0\\42666.7 &amp; 0 &amp; 85333.3 &amp; -42666.7 &amp; 0 &amp; 42666.7\\-28444.4 &amp; 0 &amp; -42666.7 &amp; 28444.4 &amp; 0 &amp; -42666.7\\0 &amp; -1600000.0 &amp; 0 &amp; 0 &amp; 1600000.0 &amp; 0\\42666.7 &amp; 0 &amp; 42666.7 &amp; -42666.7 &amp; 0 &amp; 85333.3\end{matrix}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{matrix}570713.7 &amp; -560657.1 &amp; 15084.9 &amp; -570713.7 &amp; 560657.1 &amp; 15084.9\\-560657.1 &amp; 570713.7 &amp; 15084.9 &amp; 560657.1 &amp; -570713.7 &amp; 15084.9\\15084.9 &amp; 15084.9 &amp; 60339.8 &amp; -15084.9 &amp; -15084.9 &amp; 30169.9\\-570713.7 &amp; 560657.1 &amp; -15084.9 &amp; 570713.7 &amp; -560657.1 &amp; -15084.9\\560657.1 &amp; -570713.7 &amp; -15084.9 &amp; -560657.1 &amp; 570713.7 &amp; -15084.9\\15084.9 &amp; 15084.9 &amp; 30169.9 &amp; -15084.9 &amp; -15084.9 &amp; 60339.8\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 </section>
-<section id="id4">
-<h2>Μητρώο στιβαρότητας φορέα<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
+<section id="id5">
+<h2>Μητρώο στιβαρότητας φορέα<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
 <p>Είναι διαστάσεων 12x12 και δημιουργείται από το συνδυασμό των επιμέρους μητρώων, βάσει της αντιστοίχισης των βαθμών ελευθερίας στο καθολικό σύστημα συντεταγμένων</p>
 <p>Δημιουργείται ένα μηδενικό μητρώο 12x12 και σταδιακά προστίθενται οι τιμές στις κατάλληλες θέσεις</p>
 <table class="colwidths-auto table">
@@ -815,7 +1016,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{array}{cccccccccccc}28444.4 &amp; 0 &amp; -42666.7 &amp; -28444.4 &amp; 0 &amp; -42666.7 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1600000.0 &amp; 0 &amp; 0 &amp; -1600000.0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-42666.7 &amp; 0 &amp; 85333.3 &amp; 42666.7 &amp; 0 &amp; 42666.7 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-28444.4 &amp; 0 &amp; 42666.7 &amp; 28444.4 &amp; 0 &amp; 42666.7 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; -1600000.0 &amp; 0 &amp; 0 &amp; 1600000.0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-42666.7 &amp; 0 &amp; 42666.7 &amp; 42666.7 &amp; 0 &amp; 85333.3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{array}{cccccccccccc}420968.2 &amp; 606874.8 &amp; -24577.5 &amp; -420968.2 &amp; -606874.8 &amp; -24577.5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\606874.8 &amp; 926697.2 &amp; 16385.0 &amp; -606874.8 &amp; -926697.2 &amp; 16385.0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-24577.5 &amp; 16385.0 &amp; 71001.6 &amp; 24577.5 &amp; -16385.0 &amp; 35500.8 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-420968.2 &amp; -606874.8 &amp; 24577.5 &amp; 420968.2 &amp; 606874.8 &amp; 24577.5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-606874.8 &amp; -926697.2 &amp; -16385.0 &amp; 606874.8 &amp; 926697.2 &amp; -16385.0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-24577.5 &amp; 16385.0 &amp; 35500.8 &amp; 24577.5 &amp; -16385.0 &amp; 71001.6 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]\end{split}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -841,7 +1042,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{array}{cccccccccccc}0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 28444.4 &amp; 0 &amp; 42666.7 &amp; -28444.4 &amp; 0 &amp; 42666.7\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1600000.0 &amp; 0 &amp; 0 &amp; -1600000.0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 42666.7 &amp; 0 &amp; 85333.3 &amp; -42666.7 &amp; 0 &amp; 42666.7\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -28444.4 &amp; 0 &amp; -42666.7 &amp; 28444.4 &amp; 0 &amp; -42666.7\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -1600000.0 &amp; 0 &amp; 0 &amp; 1600000.0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 42666.7 &amp; 0 &amp; 42666.7 &amp; -42666.7 &amp; 0 &amp; 85333.3\end{array}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{array}{cccccccccccc}0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 570713.7 &amp; -560657.1 &amp; 15084.9 &amp; -570713.7 &amp; 560657.1 &amp; 15084.9\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -560657.1 &amp; 570713.7 &amp; 15084.9 &amp; 560657.1 &amp; -570713.7 &amp; 15084.9\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 15084.9 &amp; 15084.9 &amp; 60339.8 &amp; -15084.9 &amp; -15084.9 &amp; 30169.9\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -570713.7 &amp; 560657.1 &amp; -15084.9 &amp; 570713.7 &amp; -560657.1 &amp; -15084.9\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 560657.1 &amp; -570713.7 &amp; -15084.9 &amp; -560657.1 &amp; 570713.7 &amp; -15084.9\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 15084.9 &amp; 15084.9 &amp; 30169.9 &amp; -15084.9 &amp; -15084.9 &amp; 60339.8\end{array}\right]\end{split}\]</div>
 </div>
 </div>
 <p>Οπότε το συνολικό μητρώο του φορέα είναι το <span class="math notranslate nohighlight">\(Κ\)</span></p>
@@ -854,28 +1055,42 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{array}{cccccccccccc}28444.4 &amp; 0 &amp; -42666.7 &amp; -28444.4 &amp; 0 &amp; -42666.7 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1600000.0 &amp; 0 &amp; 0 &amp; -1600000.0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-42666.7 &amp; 0 &amp; 85333.3 &amp; 42666.7 &amp; 0 &amp; 42666.7 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-28444.4 &amp; 0 &amp; 42666.7 &amp; 1378444.4 &amp; 0 &amp; 42666.7 &amp; -1350000.0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; -1600000.0 &amp; 0 &amp; 0 &amp; 1630375.0 &amp; 60750.0 &amp; 0 &amp; -30375.0 &amp; 60750.0 &amp; 0 &amp; 0 &amp; 0\\-42666.7 &amp; 0 &amp; 42666.7 &amp; 42666.7 &amp; 60750.0 &amp; 247333.3 &amp; 0 &amp; -60750.0 &amp; 81000.0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; -1350000.0 &amp; 0 &amp; 0 &amp; 1378444.4 &amp; 0 &amp; 42666.7 &amp; -28444.4 &amp; 0 &amp; 42666.7\\0 &amp; 0 &amp; 0 &amp; 0 &amp; -30375.0 &amp; -60750.0 &amp; 0 &amp; 1630375.0 &amp; -60750.0 &amp; 0 &amp; -1600000.0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 60750.0 &amp; 81000.0 &amp; 42666.7 &amp; -60750.0 &amp; 247333.3 &amp; -42666.7 &amp; 0 &amp; 42666.7\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -28444.4 &amp; 0 &amp; -42666.7 &amp; 28444.4 &amp; 0 &amp; -42666.7\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -1600000.0 &amp; 0 &amp; 0 &amp; 1600000.0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 42666.7 &amp; 0 &amp; 42666.7 &amp; -42666.7 &amp; 0 &amp; 85333.3\end{array}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{array}{cccccccccccc}420968.2 &amp; 606874.8 &amp; -24577.5 &amp; -420968.2 &amp; -606874.8 &amp; -24577.5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\606874.8 &amp; 926697.2 &amp; 16385.0 &amp; -606874.8 &amp; -926697.2 &amp; 16385.0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-24577.5 &amp; 16385.0 &amp; 71001.6 &amp; 24577.5 &amp; -16385.0 &amp; 35500.8 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-420968.2 &amp; -606874.8 &amp; 24577.5 &amp; 1770968.2 &amp; 606874.8 &amp; 24577.5 &amp; -1350000.0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\-606874.8 &amp; -926697.2 &amp; -16385.0 &amp; 606874.8 &amp; 957072.2 &amp; 44365.0 &amp; 0 &amp; -30375.0 &amp; 60750.0 &amp; 0 &amp; 0 &amp; 0\\-24577.5 &amp; 16385.0 &amp; 35500.8 &amp; 24577.5 &amp; 44365.0 &amp; 233001.6 &amp; 0 &amp; -60750.0 &amp; 81000.0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; -1350000.0 &amp; 0 &amp; 0 &amp; 1920713.7 &amp; -560657.1 &amp; 15084.9 &amp; -570713.7 &amp; 560657.1 &amp; 15084.9\\0 &amp; 0 &amp; 0 &amp; 0 &amp; -30375.0 &amp; -60750.0 &amp; -560657.1 &amp; 601088.7 &amp; -45665.1 &amp; 560657.1 &amp; -570713.7 &amp; 15084.9\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 60750.0 &amp; 81000.0 &amp; 15084.9 &amp; -45665.1 &amp; 222339.8 &amp; -15084.9 &amp; -15084.9 &amp; 30169.9\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -570713.7 &amp; 560657.1 &amp; -15084.9 &amp; 570713.7 &amp; -560657.1 &amp; -15084.9\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 560657.1 &amp; -570713.7 &amp; -15084.9 &amp; -560657.1 &amp; 570713.7 &amp; -15084.9\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 15084.9 &amp; 15084.9 &amp; 30169.9 &amp; -15084.9 &amp; -15084.9 &amp; 60339.8\end{array}\right]\end{split}\]</div>
 </div>
 </div>
 </section>
-<section id="id5">
-<h2>Μητρώο εξωτερικής φόρτισης<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
-<p>Η εξωτερική φόρτιση αποτελείται από επικόμβια φορτία μόνο, τα οποία ασκούνται στους κόμβους 2 και 3.</p>
+<section id="id6">
+<h2>Μητρώο εξωτερικής φόρτισης<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h2>
+<p>Η εξωτερική φόρτιση αποτελείται από το επικόμβιο φορτίο στον κόμβο 2 και και το κατανεμημένο φορτίο στο στοιχείο 2.</p>
 <p>Παρατηρείται ότι στο καθολικό σύστημα συντεταγμένων τα φορτία αυτά έχουν όλα θετικό πρόσημο, εκτός από τη ροπή στον κόμβο 2.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P_q</span> <span class="o">=</span> <span class="n">P_uniformly_distributed_load</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="n">q</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L23</span><span class="p">,</span> <span class="n">ignore_axial</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">P_q</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}\displaystyle \left[\begin{matrix}0\\-80.0\\-53.3333333333333\\0\\-80.0\\53.3333333333333\end{matrix}\right]\end{split}\]</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">],</span>
             <span class="p">[</span><span class="mi">0</span><span class="p">],</span>
             <span class="p">[</span><span class="mi">0</span><span class="p">],</span>
-            <span class="p">[</span><span class="mi">50</span><span class="p">],</span>
+            <span class="p">[</span><span class="n">F2</span><span class="p">],</span>
             <span class="p">[</span><span class="mi">0</span><span class="p">],</span>
-            <span class="p">[</span><span class="o">-</span><span class="mi">300</span><span class="p">],</span>
-            <span class="p">[</span><span class="mi">50</span><span class="p">],</span>
             <span class="p">[</span><span class="mi">0</span><span class="p">],</span>
-            <span class="p">[</span><span class="mi">700</span><span class="p">],</span>
+            <span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+            <span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+            <span class="p">[</span><span class="mi">0</span><span class="p">],</span>
             <span class="p">[</span><span class="mi">0</span><span class="p">],</span>
             <span class="p">[</span><span class="mi">0</span><span class="p">],</span>
             <span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
+
+<span class="n">P</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="n">P_q</span>
 
 <span class="n">round_expr</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
@@ -883,16 +1098,16 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}0\\0\\0\\50\\0\\-300\\50\\0\\700\\0\\0\\0\end{matrix}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{matrix}0\\0\\0\\100.0\\-80.0\\-53.33\\0\\-80.0\\53.33\\0\\0\\0\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
-</section>
-<section id="id6">
-<h2>Δεσμευμένοι και ελεύθεροι βαθμοί ελευθερίας<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h2>
-<p>Οι δεσμευμένοι βαθμοί ελευθερίας (με κόκκινο) οφείλονται στις πακτώσεις στους κόμβους 1 και 4, ενώ οι βαθμοί ελευθερίας 4-9 είναι αδέσμευτοι.</p>
 </section>
 <section id="id7">
-<h2>Διαχωρισμός μητρώων<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h2>
+<h2>Δεσμευμένοι και ελεύθεροι βαθμοί ελευθερίας<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h2>
+<p>Οι δεσμευμένοι βαθμοί ελευθερίας (με κόκκινο) οφείλονται στις πακτώσεις στους κόμβους 1 και 4, ενώ οι βαθμοί ελευθερίας 4-9 είναι αδέσμευτοι.</p>
+</section>
+<section id="id8">
+<h2>Διαχωρισμός μητρώων<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Καθολ. Συστ.</p></th>
@@ -957,27 +1172,27 @@ title="Print to PDF"
 </table>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/panagop/ihu_courses/main/shared/images/mitroa/example7/Kuu_vs_Kru.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1100</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/panagop/ihu_courses/main/shared/images/mitroa/example8/Kuu_vs_Kru.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1100</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/example7-trans_28_0.png" src="../../_images/example7-trans_28_0.png" />
+<img alt="../../../_images/example8-trans_36_0.png" src="../../../_images/example8-trans_36_0.png" />
 </div>
 </div>
 <p>Ομοίως και για τα μητρώα εξωτερικής φόρτισης, παραμορφώσεων και αντιδράσεων</p>
 <!-- <img src="img\PUR.png" width="750"> --><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/panagop/ihu_courses/main/shared/images/mitroa/example7/PUR.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/panagop/ihu_courses/main/shared/images/mitroa/example8/PUR.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/example7-trans_30_0.png" src="../../_images/example7-trans_30_0.png" />
+<img alt="../../../_images/example8-trans_38_0.png" src="../../../_images/example8-trans_38_0.png" />
 </div>
 </div>
-<section id="id8">
-<h3>Υπομητρώα στιβαρότητας<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
+<section id="id9">
+<h3>Υπομητρώα στιβαρότητας<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K_UU</span> <span class="o">=</span> <span class="n">K</span><span class="p">[[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]]</span>
@@ -987,7 +1202,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}1378444.4 &amp; 0 &amp; 42666.7 &amp; -1350000.0 &amp; 0 &amp; 0\\0 &amp; 1630375.0 &amp; 60750.0 &amp; 0 &amp; -30375.0 &amp; 60750.0\\42666.7 &amp; 60750.0 &amp; 247333.3 &amp; 0 &amp; -60750.0 &amp; 81000.0\\-1350000.0 &amp; 0 &amp; 0 &amp; 1378444.4 &amp; 0 &amp; 42666.7\\0 &amp; -30375.0 &amp; -60750.0 &amp; 0 &amp; 1630375.0 &amp; -60750.0\\0 &amp; 60750.0 &amp; 81000.0 &amp; 42666.7 &amp; -60750.0 &amp; 247333.3\end{matrix}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{matrix}1770968.2 &amp; 606874.8 &amp; 24577.5 &amp; -1350000.0 &amp; 0 &amp; 0\\606874.8 &amp; 957072.2 &amp; 44365.0 &amp; 0 &amp; -30375.0 &amp; 60750.0\\24577.5 &amp; 44365.0 &amp; 233001.6 &amp; 0 &amp; -60750.0 &amp; 81000.0\\-1350000.0 &amp; 0 &amp; 0 &amp; 1920713.7 &amp; -560657.1 &amp; 15084.9\\0 &amp; -30375.0 &amp; -60750.0 &amp; -560657.1 &amp; 601088.7 &amp; -45665.1\\0 &amp; 60750.0 &amp; 81000.0 &amp; 15084.9 &amp; -45665.1 &amp; 222339.8\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 <p>Παρατηρείται ότι το μητρώο <span class="math notranslate nohighlight">\(K_{UU}\)</span> στην περίπτωσή μας είναι απλά ένας αριθμος</p>
@@ -1000,12 +1215,12 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}-28444.4 &amp; 0 &amp; -42666.7 &amp; 0 &amp; 0 &amp; 0\\0 &amp; -1600000.0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\42666.7 &amp; 0 &amp; 42666.7 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; -28444.4 &amp; 0 &amp; -42666.7\\0 &amp; 0 &amp; 0 &amp; 0 &amp; -1600000.0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 42666.7 &amp; 0 &amp; 42666.7\end{matrix}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{matrix}-420968.2 &amp; -606874.8 &amp; -24577.5 &amp; 0 &amp; 0 &amp; 0\\-606874.8 &amp; -926697.2 &amp; 16385.0 &amp; 0 &amp; 0 &amp; 0\\24577.5 &amp; -16385.0 &amp; 35500.8 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; -570713.7 &amp; 560657.1 &amp; -15084.9\\0 &amp; 0 &amp; 0 &amp; 560657.1 &amp; -570713.7 &amp; -15084.9\\0 &amp; 0 &amp; 0 &amp; 15084.9 &amp; 15084.9 &amp; 30169.9\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 </section>
-<section id="id9">
-<h3>Υπομητρώα εξωτερικής φόρτισης<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
+<section id="id10">
+<h3>Υπομητρώα εξωτερικής φόρτισης<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P_U</span> <span class="o">=</span> <span class="n">P</span><span class="p">[[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span> <span class="mi">0</span><span class="p">]</span>
@@ -1015,7 +1230,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}50\\0\\-300\\50\\0\\700\end{matrix}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{matrix}100.0\\-80.0\\-53.33\\0\\-80.0\\53.33\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1032,8 +1247,8 @@ title="Print to PDF"
 </div>
 </section>
 </section>
-<section id="id10">
-<h2>Υπολογισμός παραμορφώσεων<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h2>
+<section id="id11">
+<h2>Υπολογισμός παραμορφώσεων<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h2>
 <p>Είναι <span class="math notranslate nohighlight">\(K_{UU}\cdot U_U = P_U + R_U\)</span>, με <span class="math notranslate nohighlight">\(R_U=0\)</span></p>
 <p>οπότε <span class="math notranslate nohighlight">\(K_{UU}\cdot U_U = P_U\)</span></p>
 <p>και τελικά <span class="math notranslate nohighlight">\(U_U = K_{UU}^{-1}\cdot P_U\)</span></p>
@@ -1046,12 +1261,12 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}0.001071\\-3.58 \cdot 10^{-5}\\-0.0025288\\0.0009766\\3.58 \cdot 10^{-5}\\0.0035075\end{matrix}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{matrix}0.0008829\\-0.0006499\\-0.0002446\\0.0007876\\0.0005875\\0.0005738\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 </section>
-<section id="id11">
-<h2>Υπολογισμός αντιδράσεων στήριξης<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h2>
+<section id="id12">
+<h2>Υπολογισμός αντιδράσεων στήριξης<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h2>
 <p>Είναι <span class="math notranslate nohighlight">\(K_{RU}\cdot U_U = P_R + R_R\)</span></p>
 <p>οπότε <span class="math notranslate nohighlight">\(R_R = K_{RU}\cdot U_U - P_R\)</span></p>
 <div class="cell docutils container">
@@ -1063,7 +1278,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \left[\begin{matrix}77.43\\57.28\\-62.2\\-177.43\\-57.28\\191.32\end{matrix}\right]\end{split}\]</div>
+\[\begin{split}\displaystyle \left[\begin{matrix}28.73\\62.41\\23.67\\-128.73\\97.59\\38.05\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 </section>
@@ -1075,9 +1290,9 @@ title="Print to PDF"
 <span class="n">ops</span><span class="o">.</span><span class="n">model</span><span class="p">(</span><span class="s1">&#39;basic&#39;</span><span class="p">,</span> <span class="s1">&#39;-ndm&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;-ndf&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 
 <span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Ly</span><span class="p">)</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">Lx</span><span class="p">,</span> <span class="n">Ly</span><span class="p">)</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">Lx</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">L1</span><span class="p">,</span> <span class="n">L4</span><span class="p">)</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">L1</span><span class="o">+</span><span class="n">L2</span><span class="p">,</span> <span class="n">L4</span><span class="p">)</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">L1</span><span class="o">+</span><span class="n">L2</span><span class="o">+</span><span class="n">L3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 
 <span class="n">ops</span><span class="o">.</span><span class="n">fix</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">ops</span><span class="o">.</span><span class="n">fix</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -1097,9 +1312,8 @@ title="Print to PDF"
 <span class="n">ops</span><span class="o">.</span><span class="n">timeSeries</span><span class="p">(</span><span class="s1">&#39;Constant&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">ops</span><span class="o">.</span><span class="n">pattern</span><span class="p">(</span><span class="s1">&#39;Plain&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
-<span class="c1"># ops.eleLoad(&#39;-ele&#39;, 1, &#39;-type&#39;, &#39;-beamPoint&#39;, -F_load, 0.5)</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">F2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">M2</span><span class="p">)</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">F3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">M3</span><span class="p">)</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">F2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">eleLoad</span><span class="p">(</span><span class="s1">&#39;-ele&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;-type&#39;</span><span class="p">,</span> <span class="s1">&#39;-beamUniform&#39;</span><span class="p">,</span> <span class="o">-</span><span class="n">q</span><span class="p">)</span>
 
 
 
@@ -1141,12 +1355,78 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/example7-trans_45_0.png" src="../../_images/example7-trans_45_0.png" />
-<img alt="../../_images/example7-trans_45_1.png" src="../../_images/example7-trans_45_1.png" />
-<img alt="../../_images/example7-trans_45_2.png" src="../../_images/example7-trans_45_2.png" />
-<img alt="../../_images/example7-trans_45_3.png" src="../../_images/example7-trans_45_3.png" />
-<img alt="../../_images/example7-trans_45_4.png" src="../../_images/example7-trans_45_4.png" />
-<img alt="../../_images/example7-trans_45_5.png" src="../../_images/example7-trans_45_5.png" />
+<img alt="../../../_images/example8-trans_53_0.png" src="../../../_images/example8-trans_53_0.png" />
+<img alt="../../../_images/example8-trans_53_1.png" src="../../../_images/example8-trans_53_1.png" />
+<img alt="../../../_images/example8-trans_53_2.png" src="../../../_images/example8-trans_53_2.png" />
+<img alt="../../../_images/example8-trans_53_3.png" src="../../../_images/example8-trans_53_3.png" />
+<img alt="../../../_images/example8-trans_53_4.png" src="../../../_images/example8-trans_53_4.png" />
+<img alt="../../../_images/example8-trans_53_5.png" src="../../../_images/example8-trans_53_5.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">round_expr</span><span class="p">(</span><span class="n">R_R</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}\displaystyle \left[\begin{matrix}28.73\\62.41\\23.67\\-128.73\\97.59\\38.05\end{matrix}\right]\end{split}\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ops</span><span class="o">.</span><span class="n">basicDeformation</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-9.535260145159831e-05, -0.0005539171030441442, 0.0002644226960102744]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ops</span><span class="o">.</span><span class="n">nodeReaction</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ops</span><span class="o">.</span><span class="n">nodeDisp</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.0, 0.0, 0.0]
+[0.0008829073159377894, -0.0006498721242716333, -0.0002445689288422502]
+[0.0007875547144861911, 0.0005875205725359427, 0.0005737708702121684]
+[0.0, 0.0, 0.0]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">round_expr</span><span class="p">(</span><span class="n">U_U</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}\displaystyle \left[\begin{matrix}0.0008829\\-0.0006499\\-0.0002446\\0.0007876\\0.0005875\\0.0005738\end{matrix}\right]\end{split}\]</div>
 </div>
 </div>
 </section>
@@ -1165,7 +1445,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./mitroa\example7"
+            path: "./mitroa\examples\example8"
         },
         predefinedOutput: true
     }
@@ -1179,17 +1459,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="example7.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../example7/example7-trans.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Εφαρμογή 7</p>
+            <p class="prev-next-title">Εφαρμογή 7 - Χρήση μητρώων μετασχηματισμού</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../example8/example8-trans.html" title="next page">
+    <a class='right-next' id="next-link" href="../example9/example9.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Εφαρμογή 8 - Χρήση μητρώων μετασχηματισμού σε μη ορθογωνικό φορέα</p>
+        <p class="prev-next-title">Εφαρμογή 9 - Δικτύωμα</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -1214,7 +1494,7 @@ title="Print to PDF"
     </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
 
   </body>
