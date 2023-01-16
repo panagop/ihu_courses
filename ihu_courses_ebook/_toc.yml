@@ -15,11 +15,11 @@ parts:
   - file: mitroa/examples.md
     sections:
     - file: mitroa/examples/example4/example4.ipynb
-    # - file: mitroa/examples/example5/example5.ipynb
-    # - file: mitroa/examples/example6/example6.ipynb
-    # - file: mitroa/examples/example7/example7.ipynb
-    # - file: mitroa/examples/example7/example7-trans.ipynb
-    # - file: mitroa/examples/example8/example8-trans.ipynb
+    - file: mitroa/examples/example5/example5.ipynb
+    - file: mitroa/examples/example6/example6.ipynb
+    - file: mitroa/examples/example7/example7.ipynb
+    - file: mitroa/examples/example7/example7-trans.ipynb
+    - file: mitroa/examples/example8/example8-trans.ipynb
     - file: mitroa/examples/example9/example9.ipynb
   - file: mitroa/modelling.md
     sections:
@@ -27,6 +27,8 @@ parts:
     - file: mitroa/modelling/sap2000_default.md
     - file: mitroa/modelling/sap2000_no_shear.md
     - file: mitroa/modelling/frame2d_pi.md
+    - file: mitroa/modelling/sap2000_truss.md
+    - file: mitroa/modelling/frame2d_truss.md
 
 - caption: ΟΠΛΙΣΜΕΝΟ ΣΚΥΡΟΔΕΜΑ
   chapters:
