@@ -21,6 +21,7 @@ parts:
     - file: mitroa/examples/example7/example7-trans.ipynb
     - file: mitroa/examples/example8/example8-trans.ipynb
     - file: mitroa/examples/example9/example9.ipynb
+    - file: mitroa/examples/example10/example10.ipynb
   - file: mitroa/modelling.md
     sections:
     - file: mitroa/modelling/statics_vs_sap.md
