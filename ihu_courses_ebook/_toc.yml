@@ -16,6 +16,7 @@ parts:
     sections:
     - file: mitroa/examples/example1/example1.ipynb
     - file: mitroa/examples/example2/example2.ipynb
+    - file: mitroa/examples/example3/example3.ipynb
     - file: mitroa/examples/example4/example4.ipynb
     - file: mitroa/examples/example5/example5.ipynb
     - file: mitroa/examples/example6/example6.ipynb
