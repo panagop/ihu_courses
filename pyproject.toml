@@ -18,6 +18,7 @@ jupyter-book = "^0.13.1"
 ghp-import = "^2.1.0"
 jupytext = "^1.14.1"
 openseespy = "3.4.0.2"
+pythonnet = "^3.0.1"
 
 
 [tool.poetry.group.dev.dependencies]
