@@ -19,6 +19,8 @@ ghp-import = "^2.1.0"
 jupytext = "^1.14.1"
 openseespy = "3.4.0.2"
 pythonnet = "^3.0.1"
+handcalcs = "^1.6.5"
+forallpeople = "^2.6.7"
 
 
 [tool.poetry.group.dev.dependencies]
